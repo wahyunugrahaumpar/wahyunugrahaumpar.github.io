@@ -1,0 +1,144 @@
+.label-akun, .label-teman, .label-cteman, .label-inbox, .label-chat, .label-userAll, .label-soal, .label-lvl, .label-kls, .label-mapel, .label-smg-berhasil, .label-lihat-hasil{
+  position: absolute; left: 15%; right: 0%;
+}
+.cancel-user, .pilgan, .m-lagi{
+	display: none;
+}
+
+.block-scroll{
+  overflow: auto;
+  height: 100%;
+}
+
+/* Let's get this party started */
+::-webkit-scrollbar {
+    width: 4px;
+}
+ 
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 2px rgba(0,0,0,0.3); 
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    background: rgba(255,0,0,0.5); 
+    -webkit-box-shadow: inset 0 0 2px rgba(0,0,0,0.5); 
+}
+::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(255,0,0,0.4); 
+}
+
+.b-alert-bawah{
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 5%;
+  right: 5%;
+  max-height: 95%;
+  bottom: 5%;
+  overflow: hidden;
+}
+
+.alert-bawah{
+  overflow: auto;
+  background-color: black;
+  background-color: rgba(0,0,0,0.7);
+  padding: 10px 15px 1px 15px;
+  border-radius: 2%;
+  word-wrap: break-word;
+}
+
+.alert-bawah .info{
+  color: white;
+  font-size: 12px;
+  text-align: center;
+}
+
+.tengah{
+  position: absolute; 
+  top: 50%;
+  z-index: 2;
+  left:0;
+  right: 0;
+}
+
+.bg-duel{
+  display: none;
+  position: absolute;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.duel-text{
+  position: absolute;
+  z-index: 9999999999;
+  color: white;
+  margin: auto;
+  left: 25%;
+  right: 25%;
+  text-align: center;
+  top: 50%;
+}
+
+.overtitik{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.btn-modif{
+  overflow-y: scroll;
+  word-wrap: break-word;
+}
+
+.user-online{
+	position: absolute;
+	/*bottom: 0;*/
+	right: 15px;
+}
+
+.footer-chat{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.loader {
+  position:absolute;
+  margin:auto;
+  top:40%;
+  left:20%;
+  right:20%;
+  border: 10px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 10px solid blue;
+  border-right: 10px solid green;
+  border-bottom: 10px solid red;
+  border-left: 10px solid pink;
+  width: 60px;
+  height: 60px;
+  z-index: 999999999;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+  display: none;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

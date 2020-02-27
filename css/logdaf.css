@@ -1,0 +1,39 @@
+.navIndex{
+  box-shadow: 1px 1px 10px 2px #5B5B5B;
+  background-image: linear-gradient(60deg, #54ECA6, #007BFF);
+}
+
+.dl:firts-child li{
+  float: right;
+  width: 50%;
+  margin: 0;
+  text-align: center;
+}
+
+.dl:last-child li{
+  float: left;
+  width: 50%;
+  margin: 0;
+  text-align: center;
+}
+
+.active{
+  color: #0056b3;
+}
+.noactive{
+  color :#4D4DFD;
+}
+
+.swipe{
+   clear: both;
+}
+
+hr{
+  position: relative;
+  width: 50%;
+  margin-left: 0; 
+  margin-top: -5px; 
+  border-width: 5px; 
+  border-color: #EBEBEC; 
+  transition: all 300ms;
+}

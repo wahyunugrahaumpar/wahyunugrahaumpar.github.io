@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+ <link rel="stylesheet" type="text/css" href="css/swipe.css">
+ <link rel="stylesheet" type="text/css" href="css/logdaf.css">
+ <link rel="stylesheet" type="text/css" href="css/sidebar.css">
+  <link rel="stylesheet" type="text/css" href="ionicons/css/ionicons.min.css">
+ <link rel="stylesheet" type="text/css" href="css/index.css">
+ <link rel="stylesheet" type="text/css" href="css/dataTables.bootstrap4.min.css">
+ <script type="text/javascript" src="cordova.js"></script>
+ <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+ <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+ <script type="text/javascript" src="js/sweetalert.min.js"></script>
+ <script type="text/javascript" src="js/sidebar.js"></script>
+ <script type="text/javascript" src="js/swipe.js"></script>
+ <script src="js/firebase-app.js"></script>
+ <script src="js/firebase-auth.js"></script>
+ <script src="js/firebase-database.js"></script>
+ <script src="js/firebase-storage.js"></script>
+ <script type="text/javascript" src="js/config.js"></script>
+
+ <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js" crossorigin="anonymous"></script>
+ <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js" crossorigin="anonymous"></script>
+
+ <!-- <script type="text/javascript" src="js/admob.js"></script> -->
+ <script type="text/javascript" src="js/index.js"></script>
+  <title>Index Page</title>
+ </head>
+  <body>
+
+    <div class="tengah" style="top:43%;">
+    <center><img src="img/logo.png" alt="" class="img-fluid rounded" width="80" height="auto"></center>
+    </div>
+  <script type="text/javascript">
+    // document.addEventListener('deviceready', function(data){
+      // showBanner();
+     if(gls('email') === null && gls('password') === null){
+      loadPage('logdaf');
+     }else{
+      login(gls('email'), gls('password'));
+     }
+    // }, false);
+  </script>
+  </body>
+</html>
