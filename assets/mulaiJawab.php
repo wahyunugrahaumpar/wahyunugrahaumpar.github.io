@@ -60,6 +60,6 @@
     $('.pertanyaan').html(html);
     $('.perhide').hide();
     $('.pertanyaan0').show();
-    setInt();
+    // setInt();
 
    </script>
